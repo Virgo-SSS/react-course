@@ -33,6 +33,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "react/prop-types": "off" // code ini digunakan untuk mematikan pemeriksaan props type pada code kita, karena kita pakai js bukan ts jadi gak perlu ngecek data type
     },
   },
 ]

@@ -2,13 +2,27 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import HelloWorld from './HelloWorld'
+import { Destructuring } from './Destructuring'
+import { Spread } from './Spread'
 
 function App() {
   const [count, setCount] = useState(0)
+  const testSpread = {
+    hobby: "scroll fesnuk",
+    food: "ayam",
+    drink: "air putih"
+  }
 
   return (
     <>
       <div>
+        <HelloWorld text="Virgo"/>
+        <Destructuring text="Virgo Stevanus"/>
+        
+        {/* ...testSpread merupakan gaya spread syntax dari JS yang dapat mengirim semua attribute langsung ke component */}
+        <Spread {...testSpread}/>
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
