@@ -9,6 +9,7 @@ import { EventHandler } from './EventHandler'
 import { CollectionComponentsss } from './CollectionComponentsss'
 import EventHandlerAsProps from './EventHandlerAsProps'
 import EventPropagation from './EventPropagation'
+import UseState from './UseState'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,8 @@ function App() {
         <EventHandlerAsProps handleClick={() => console.log("clicked from props")}/>
 
         <EventPropagation />
+
+        <UseState />
 
         </div>
     </>
