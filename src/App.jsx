@@ -8,6 +8,7 @@ import { Spread } from './Spread'
 import { EventHandler } from './EventHandler'
 import { CollectionComponentsss } from './CollectionComponentsss'
 import EventHandlerAsProps from './EventHandlerAsProps'
+import EventPropagation from './EventPropagation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,8 @@ function App() {
 
         {/* event handler di kirim melalui props */}
         <EventHandlerAsProps handleClick={() => console.log("clicked from props")}/>
+
+        <EventPropagation />
 
         </div>
     </>
