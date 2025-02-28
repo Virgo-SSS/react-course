@@ -5,6 +5,7 @@ import './App.css'
 import HelloWorld from './HelloWorld'
 import { Destructuring } from './Destructuring'
 import { Spread } from './Spread'
+import CollectionComponent from './CollectionComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,9 +18,17 @@ function App() {
   return (
     <>
       <div>
+        <div>
+          <CollectionComponent />
+        </div>
+        
         <HelloWorld text="Virgo"/>
         <Destructuring text="Virgo Stevanus"/>
         
+        {/* Dari pada melakukan seperti ini: */}
+        {/* <Spread hobby={testSpread.hobby} food={testSpread.food} drink={testSpread.drink} /> */}
+
+        {/* Lebih Baik menggunakan spread syntax seperti berikut: */}
         {/* ...testSpread merupakan gaya spread syntax dari JS yang dapat mengirim semua attribute langsung ke component */}
         <Spread {...testSpread}/>
 
