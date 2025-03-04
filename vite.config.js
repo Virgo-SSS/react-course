@@ -8,7 +8,8 @@ export default defineConfig({
     rollupOptions: {
       index: "index.html",
       profile: "profile.html",
-      product: "product.html"
+      product: "product.html",
+      online: "online.html"
     }
   }
 })
