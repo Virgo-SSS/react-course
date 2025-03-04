@@ -9,6 +9,8 @@ import EventHandlerAsProps from './EventHandlerAsProps'
 import EventPropagation from './EventPropagation'
 import UseState from './UseState'
 import ResetState from './ResetState'
+import Timer from './Timer'
+import DomRef from './DomRef'
 
 function App() {
   let [showSecond, setShowSecond] = useState(false);
@@ -130,6 +132,9 @@ function App() {
           {showSecond ? <ResetState key="reset-2" name='Reset Second' /> : <ResetState key="reset-1" name='Reset First' />}
         */}
         </div>
+
+        <Timer/>
+        <DomRef />
     </>
   )
 }
