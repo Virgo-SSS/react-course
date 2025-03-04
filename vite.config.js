@@ -7,7 +7,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       index: "index.html",
-      profile: "profile.html"
+      profile: "profile.html",
+      product: "product.html"
     }
   }
 })
